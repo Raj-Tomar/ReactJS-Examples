@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Hello from './Hello';
 import Button from './Button';
 import Display from './Display';
+import ReconciliationUsingHTML from './ReconciliationUsingHTML';
+import ReconciliationUsingReact from './ReconciliationUsingReact';
 
 import './App.css';
 
@@ -19,6 +21,10 @@ function App() {
       <Button onClickFunction = {incrementCounter} increment = {10}/>
       <Button onClickFunction = {incrementCounter} increment = {20}/>
       <Display message={counter}/>
+
+    
+      <ReconciliationUsingHTML/>
+      <ReconciliationUsingReact/>
     </div>
   );
 }

@@ -203,3 +203,29 @@ The Basics:
 				</div>
 			  );
 			}
+	
+	Tree Reconciliation in Action
+		https://jscomplete.com/playground/rgs1.7
+		
+		ReconciliationUsingHTML
+			function ReconciliationUsingHTML () {
+				return (
+					<div>
+						<div>Hello HTML</div>
+						<input/>
+						<pre>{(new Date).toLocaleTimeString()}</pre>
+					</div>
+				);
+			}
+		
+		ReconciliationUsingReact
+			function ReconciliationUsingReact () {
+				return (
+					React.createElement('div', null, 'Hello React ',
+					React.createElement('input', null),
+					React.createElement('pre', null, (new Date().toLocaleTimeString())),
+					)
+				);
+			}
+		
+		User both Reconciliation in setInterval to render the Time.
